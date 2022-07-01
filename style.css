@@ -6,10 +6,135 @@
     --white: hsl(0, 0%, 100%)
 }
 
+
+
 body {
-    background: var(--cream);
+    background-color: var(--cream);
+    margin: 0;
+    padding: 0;
 }
 
-container {
-    max-width: 50%;
+.main-container {
+    height: 386px;
+    width: 525px;
+    margin-top: 15vh;
+    border-radius: 15px;
+
+    background-color: #ffffff;
+    text-align: left;
+    padding: 0;
+}
+
+.image {
+    display: inline-block;
+    width: 49%;
+    margin: 0;
+    border-radius: 15px 0 0 15px;
+}
+
+.content-container {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--very-dark-blue);
+    margin: 5px 0 15px 0;
+    line-height: 1.9rem;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 0.775rem;
+    margin: 20px 0 10px 0;
+
+    color: var(--dark-grayish-blue);
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.775rem;
+    line-height: 1.7;
+    color: var(--dark-grayish-blue);
+    margin: 10px 0;
+}
+
+
+
+.sale-price {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    color: hsl(158, 36%, 37%);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.original-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.775rem;
+    line-height: 1.7;
+    color: var(--dark-grayish-blue);
+    text-decoration: line-through;
+    margin-left: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+
+
+
+
+button {
+    justify-items: center;
+    background-color: var(--dark-cyan) !important;
+    border: var(--dark-cyan) !important;
+}
+
+.image-sm {
+    display: none;
+}
+
+@media (max-width: 400px) {
+    .image-lg {
+        display: none;
+    }
+
+    .image-sm {
+        display: block;
+    }
+
+    body {
+        margin: 5%;
+    }
+
+    .main-container {
+        width: 95%;
+        height: auto;
+        padding-bottom: 20px;
+        margin-top: auto;
+    }
+
+    .image {
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+
+    .content-container {
+        width: auto;
+        padding: 0 5%;
+    }
+
+    h1 {
+        font-size: 1.85rem;
+    }
 }
